@@ -1,0 +1,31 @@
+driver-details:
+  browserType: chrome
+  isHeadless: false
+  isIncognito: false
+  isDebugMode: false
+  shouldHighlightElement: true
+  highlightColor: yellow
+  os: windows
+  gridUrl: http://10.211.55.3:4444/wd/hub
+  isUsingGrid: false
+  listeners:
+    - ConsolePrinterListener
+    - HighlightListener
+  #    - LoggerListener
+  browserArguments:
+# example:
+#    - --incognito
+environment:
+  url: https://sparta.dev4.xara.ai/element/
+  name: sparta
+  isActiveDirectoryUser: false
+  users:
+#    - "federation@bstai.onmicrosoft.com/userpassword"
+    - "admin/bst@56LKX#"
+#    - "analyst/userpassword"
+
+timeout:
+  implicit: 500
+  explicit: 500
+  poolingInterval: 800
+  page: 100
